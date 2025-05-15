@@ -1,0 +1,3 @@
+.work-text {
+  font-size: clamp(40px, 13vw, 328px);
+}

@@ -3,15 +3,53 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1a1f2c;
+  --foreground: var(--token-c2b9fcb6-3578-4f14-a6bc-a214ca55b7a5);
+  --token-99c2a2fb-c572-4a21-9b3a-79ca65ab414d: rgb(36, 43, 38);
+  --token-c2b9fcb6-3578-4f14-a6bc-a214ca55b7a5: rgb(231, 229, 223);
+  --token-d7b88326-9838-4802-9e55-50d3b1d9ab1d: rgba(231, 229, 223, 0.5);
+  --token-c9e7eeec-7da0-48c8-bfa7-17b18f22efa9: rgb(230, 216, 173);
+  --token-1a2fc921-6bcf-4d82-a9d0-51735ebaf544: rgb(28, 33, 29);
+  --token-44d5c8f7-feff-4b06-8988-2ddeb757558d: rgb(5, 5, 5);
+  --token-c8f43398-7fa9-473b-9530-f3acd8077657: rgb(32, 96, 223);
+  --token-c78d5e69-afab-4771-81a7-679d6b5cbe0f: rgb(36, 43, 38);
+  --border-color: rgba(255, 255, 255, 0.2);
+  --list-color: rgba(36, 43, 38, 0.36);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --token-99c2a2fb-c572-4a21-9b3a-79ca65ab414d: rgb(36, 43, 38);
+    --token-c2b9fcb6-3578-4f14-a6bc-a214ca55b7a5: rgb(231, 229, 223);
+    --token-d7b88326-9838-4802-9e55-50d3b1d9ab1d: rgba(231, 229, 223, 0.5);
   }
+}
+
+@font-face {
+  font-family: "Koulen";
+  src: url("/fonts/Koulen-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PinyonScript";
+  src: url("/fonts/PinyonScript-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/fonts/RobotoMono-Italic-VariableFont_wght.ttf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("/fonts/RobotoMono-VariableFont_wght.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -24,4 +62,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.backdrop-blur-xl {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-circle {
+  animation: spin var(--spin-duration, 20s) linear infinite;
+  transform-origin: 50% 50%;
 }

@@ -1,0 +1,11 @@
+.text-headline-fluid {
+  font-size: clamp(40px, 18vw, 350px);
+}
+
+.text-headline-fluid-sub {
+  font-size: clamp(40px, 17vw, 328px);
+}
+
+.selected-work-text {
+  font-size: clamp(40px, 16vw, 328px);
+}
