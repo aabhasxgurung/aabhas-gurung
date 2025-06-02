@@ -1,0 +1,6 @@
+.text-about-heading {
+  font-size: clamp(40px, 10vw, 328px);
+}
+.text-about-intro {
+  font-size: clamp(40px, 5.7vw, 328px);
+}

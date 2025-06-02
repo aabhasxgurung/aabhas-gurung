@@ -1,6 +1,7 @@
 import { RotatingTextCircle } from "@/components/ui/RotatingCirlce";
 import Image from "next/image";
 import React from "react";
+import "./about.css";
 
 const services = [
   {
@@ -19,14 +20,6 @@ const services = [
     number: "iv.",
     title: "Optimizing interfaces for enhanced user interaction.",
   },
-  //   {
-  //     number: "v.",
-  //     title: "Business Strategy",
-  //   },
-  //   {
-  //     number: "vi.",
-  //     title: "Brand identity",
-  //   },
 ];
 
 const clients = [
@@ -59,7 +52,7 @@ const exp = [
     time: "2024-Now",
   },
   {
-    title: "Associate Frontend Developer",
+    title: "Frontend Developer",
     desc: "Helping Brands Grow",
     time: "2023-2024",
   },
@@ -73,14 +66,14 @@ const exp = [
 const About = () => {
   return (
     <div>
-      <div className="pt-[53px] px-[40px] w-full">
-        <div className="pt-[7px] pb-[3px] pl-20">
-          <h3 className="text-[137px] font-koulen text-secondary leading-[0.9em]">
+      <div className="pt-[31px] md:pt-[53px] px-4 md:px-[40px] w-full text-[137px] text-about-heading">
+        <div className="pt-[7px] pb-[3px] md:pl-20">
+          <h3 className="font-koulen text-secondary leading-[0.9em] ">
             Interactive front-end developer
           </h3>
         </div>
         <div className="pt-[7px]">
-          <h3 className="text-[137px] font-koulen text-secondary leading-[0.9em]">
+          <h3 className="font-koulen text-secondary leading-[0.9em]">
             <span className="text-accent font-pinyonscript">born</span> and{" "}
             <span className="text-accent font-pinyonscript">based</span> in
             nepal
@@ -88,7 +81,7 @@ const About = () => {
         </div>
         <div></div>
       </div>
-      <div className="flex flex-row w-full pt-[50px] px-[40px] pb-[50px] gap-[41px] justify-end items-end">
+      <div className="flex flex-col-reverse lg:flex-row w-full pt-[35px] md:pt-[50px] px-4 md:px-[40px] pb-[50px] gap-[41px] justify-end items-end">
         {/* 1st column (empty placeholder) */}
         <div className="flex-1"></div>
 
@@ -100,7 +93,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex-1 flex flex-col gap-5">
-            <h3 className="text-[52px] text-secondary font-koulen leading-[0.9em]">
+            <h3 className="text-[32px] md:text-[52px] text-secondary font-koulen leading-[0.9em]">
               2k25 • Folio of Aabhas
             </h3>
             <p className="text-secondary font-robotomono text-sm">
@@ -129,31 +122,31 @@ const About = () => {
           />
         </div>
       </div>
-      <section className="pt-[70px] sticky top-0 h-[115vh] w-full z-0">
+      <section className="pt-10 md:pt-[70px] sticky top-0 h-[90vh] md:h-[115vh] w-full z-0">
         <div className="relative">
-          <div className="flex flex-col px-20 gap-1 justify-center items-center">
-            <div className="w-[200px] h-[200px]">
+          <div className="flex flex-col px-4 md:px-10 lg:px-20 gap-1 justify-center items-center text-center md:text-start">
+            <div className="w-[80px] h-[130px] md:w-[200px] md:h-[200px]">
               <RotatingTextCircle speed={12} initialDeg={-260.431} />
             </div>
 
             <div>
-              <h3 className="text-[105px] text-secondary font-koulen leading-[0.9em]">
+              <h3 className="text-about-intro text-secondary font-koulen leading-[0.9em]">
                 INTERACTIVE INTERFACES
               </h3>
             </div>
             <div>
-              <h3 className="text-[105px] text-secondary font-koulen leading-[0.9em]">
+              <h3 className="text-about-intro text-secondary font-koulen leading-[0.9em]">
                 POWERED BY
               </h3>
             </div>
             <div>
-              <h3 className="text-[105px] text-accent font-pinyonscript leading-[0.9em]">
+              <h3 className="text-about-intro text-accent font-pinyonscript leading-[0.9em]">
                 user-insights, modern technology{" "}
                 <span className="font-koulen text-secondary">and</span>
               </h3>
             </div>
             <div>
-              <h3 className="text-[105px] text-accent font-pinyonscript leading-[0.9em]">
+              <h3 className="text-about-intro text-accent font-pinyonscript leading-[0.9em]">
                 <span className="font-koulen text-secondary">
                   and best practices
                 </span>
@@ -162,29 +155,29 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className="relative bg-background px-6 pb-4">
+      <div className="relative bg-background px-4 md:px-6 pb-4">
         <div className="flex flex-col gap-[10px] bg-accent rounded-xl">
           <div className="pt-[30px] px-6 flex flex-col gap-[10px]">
             <div>
-              <h3 className="text-[220px] text-background font-koulen leading-[80%]">
+              <h3 className="text-[10vw] text-background font-koulen leading-[80%]">
                 Expertiese <span className="font-pinyonscript">and</span>
               </h3>
             </div>
             <div>
-              <h3 className="text-[220px] font-koulen leading-[80%] text-background">
+              <h3 className="text-[10vw] font-koulen leading-[80%] text-background">
                 Services
               </h3>
             </div>
           </div>
-          <div className="py-[79px] px-6 flex gap-[219px] justify-start items-start w-full">
-            <div className="w-1/4 pt-5 text-background text-[14px] font-robotomono">
+          <div className="pt-[15px] pb-[45px] md:py-[79px] px-6 flex flex-col lg:flex-row gap-[17px] lg::gap-[219px] justify-start items-start w-full">
+            <div className="w-full lg:w-1/4 pt-5 text-background text-[14px] font-robotomono">
               <div>
                 <p className="font-koulen text-2xl">
                   Always designed with intention.
                 </p>
                 <br />
                 <p>
-                  As a Senior Visual Design Consultant at IBM iX, my work
+                  As a Frontend Engineer with an eye for detail, my work
                   revolves around 3 primary objectives:
                 </p>
                 <ul className="pl-[3ch] relative font-medium">
@@ -207,14 +200,17 @@ const About = () => {
             </div>
             <div className="flex flex-col justify-start items-start">
               {services.map((item) => (
-                <div className="pt-5 flex gap-[30px]" key={item.number}>
+                <div
+                  className="pt-5 flex gap-[10px] md:gap-[30px]"
+                  key={item.number}
+                >
                   <div>
-                    <h5 className="font-koulen w-[47px] text-[31px] leading-[1.3em] text-listC">
+                    <h5 className="font-koulen w-[47px] text-[27px] md:text-[1.9vw] leading-[1.3em] text-listC">
                       {item.number}
                     </h5>
                   </div>
                   <div>
-                    <h5 className="text-background font-koulen leading-[0.9em] text-[76px]">
+                    <h5 className="text-background font-koulen leading-[0.9em] text-[35px] md:text-[4vw]">
                       {item.title}
                     </h5>
                   </div>
@@ -224,8 +220,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <section className="px-6 flex gap-[10px] items-start justify-start w-full relative bg-background">
-        <div className="sticky top-0 w-[60%] h-[100vh] items-center flex ">
+      <section className="pt-[83px] lg:pt-0 px-6 flex flex-col lg:flex-row gap-[10px] items-start justify-start w-full relative bg-background">
+        <div className="relative lg:sticky lg:top-0 w-full lg:w-[60%] lg:h-[100vh] items-center flex ">
           <div className="flex flex-col gap-[10px] items-start justify-start">
             <div className="pb-[22px]">
               <p className="text-sm text-secondary leading-[1.4em] font-robotomono ">
@@ -234,18 +230,18 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-1">
               <div className="">
-                <h3 className="text-[170px] leading-[0.9em] text-left font-koulen">
+                <h3 className="text-[65px] lg:text-[9vw] leading-[0.9em] text-left font-koulen">
                   Some of{" "}
                   <span className="font-pinyonscript text-accent">my</span>
                 </h3>
               </div>
               <div className="">
-                <h3 className="text-[170px] leading-[0.9em] text-left font-koulen">
+                <h3 className="text-[65px] lg:text-[9vw] leading-[0.9em] text-left font-koulen">
                   Good friends
                 </h3>
               </div>
             </div>
-            <div className="pt-5 w-[44%]">
+            <div className="pt-5 w-full lg:w-[44%]">
               <p className="text-sm font-robotomono">
                 Partnering with world leading organisations across 8 industries,
                 creating best in class experiences.
@@ -253,15 +249,15 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="items-center flex flex-col gap-[150px] justify-center pt-[385px] pr-[10px] pb-[410px] w-[40%] relative">
+        <div className="items-center grid grid-cols-2 lg:flex flex-col gap-[30px] lg:gap-[150px] justify-center pt-4 lg:pt-[385px] lg:pr-[10px] lg:pb-[410px] lg:w-[40%] relative">
           {clients.map((item) => (
             <div
               className="w-[92%] relative flex justify-center items-center"
               key={item.name}
             >
               <div className="flex rounded-2xl">
-                <div className="h-[206px]">
-                  <p className="font-koulen text-[70px] text-secondary">
+                <div className="lg:h-[206px]">
+                  <p className="font-koulen text-[35px] lg:text-[70px] text-secondary text-center line-clamp-1">
                     {item.name}
                   </p>
                 </div>
@@ -270,9 +266,9 @@ const About = () => {
           ))}
         </div>
       </section>
-      <div className="relative w-full items-start justify-start px-6 flex flex-col overflow-hidden bg-background pt-[50px]">
+      <div className="relative w-full items-start justify-start px-6 flex flex-col overflow-hidden bg-background pt-[122px] lg:pt-[50px]">
         <div className="items-end flex gap-[10px] justify-start w-full relative bg-background">
-          <div className="flex flex-1 flex-col">
+          <div className=" flex flex-1 flex-col">
             <div className="pb-[22px]">
               <p className="text-sm text-secondary font-robotomono uppercase">
                 [my second family]
@@ -280,34 +276,34 @@ const About = () => {
             </div>
             <div>
               <div>
-                <h3 className="text-[195px] text-secondary font-koulen leading-[0.9em]">
+                <h3 className="text-[65px] lg:text-[10.3vw] text-secondary font-koulen leading-[0.9em]">
                   My <span className="text-accent font-pinyonscript">love</span>
                 </h3>
               </div>
               <div>
-                <h3 className="text-[195px] text-secondary font-koulen leading-[0.9em]">
+                <h3 className="text-[65px] lg:text-[10.3vw] text-secondary font-koulen leading-[0.9em]">
                   Stories
                 </h3>
               </div>
             </div>
           </div>
-          <div className="w-[127px] h-[127px]">
+          <div className="w-[70px] h-[90px] md:w-[127px] md:h-[127px]">
             <RotatingTextCircle />
           </div>
         </div>
-        <div className="py-[50px] flex flex-col gap-5 w-full">
+        <div className="py-2 md:py-[50px] flex flex-col gap-[10px] md:gap-5 w-full">
           {exp.map((item) => (
             <>
               <div className="relative overflow-visible flex-[1_0_0px] w-[1px] h-min aspect-[1189/1] bg-secondary"></div>
               <div className="flex justify-between items-center w-full">
-                <div className="flex flex-col gap-[6px]">
-                  <h4 className="text-[85px] leading-[0.9em] font-koulen text-secondary">
+                <div className="flex flex-col gap-[6px] max-w-[53%]">
+                  <h4 className="text-[35px] lg:text-[85px] leading-[0.9em] font-koulen text-secondary line-clamp-1">
                     {item.title}
                   </h4>
                   <p className="text-sm font-robotomono">{item.desc}</p>
                 </div>
                 <div className="flex flex-col justify-start">
-                  <h4 className="text-[85px] font-koulen text-secondary leading-[0.9em]">
+                  <h4 className="text-[35px] lg:text-[85px] font-koulen text-secondary leading-[0.9em]">
                     {item.time}
                   </h4>
                   <div className="flex gap-[10px] items-start justify-start">

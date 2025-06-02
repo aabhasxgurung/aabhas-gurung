@@ -5,9 +5,9 @@ import Image from "next/image";
 import { Projects } from "@/constnts/project";
 const Work = () => {
   return (
-    <div className="pt-[40px] w-full px-6 pb-[70px]">
-      <div className="pt-12 pb-8">
-        <p className="text-secondary font-koulen work-text">
+    <div className="md:pt-[40px] w-full px-6 pb-[70px]">
+      <div className="md:pt-12 pb-8">
+        <p className="text-secondary font-koulen work-text leading-[80%]">
           Collection <span className="font-pinyonscript text-accent ">of</span>{" "}
           Work
         </p>
@@ -16,25 +16,25 @@ const Work = () => {
         {Projects.map((item) => (
           <div key={item.name}>
             <Link
-              href=""
-              className="md:w-[854px] md:h-[700px] overflow-hidden relative cursor-pointer group rounded-md"
+              href={`/works/${item.slug}`}
+              className="w-[calc(100vw_-_32px)] lg:w-[calc(48vw_-_32px)] max-w-[873px] h-[421px] lg:h-[521px] overflow-hidden relative cursor-pointer group rounded-md"
             >
-              <div className="md:w-[854px] md:h-[700px] relative overflow-hidden rounded-md">
+              <div className="w-[calc(100vw_-_32px)] lg:w-[calc(48vw_-_32px)] max-w-[873px] h-[421px] lg:h-[521px] relative overflow-hidden rounded-md">
                 <Image
                   src={item.bg}
                   width={854}
                   height={900}
                   alt=""
-                  className="object-cover w-[854px] h-[700px] transition-transform duration-500 ease-out group-hover:scale-105"
+                  className="object-cover w-[calc(100vw_-_32px)] lg:w-[calc(48vw_-_32px)] max-w-[873px] h-[421px] lg:h-[521px] transition-transform duration-500 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[575px]">
+                <div className="hidden md:block md:absolute inset-0 bg-black/75 bg-opacity-30"></div>
+                <div className="hidden md:block md:absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[575px]">
                   <Image
                     src={item.image}
-                    width={200}
-                    height={200}
+                    width={700}
+                    height={700}
                     alt=""
-                    className="w-[675px] h-[400px]"
+                    className="w-[675px] h-[400px] object-cover object-top"
                   />
                 </div>
               </div>

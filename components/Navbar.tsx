@@ -30,9 +30,9 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="fixed bottom-[50px] left-1/2 -translate-x-1/2  bg-[#ffffff1a] backdrop-blur-xl border border-borderC rounded-2xl overflow-hidden z-30">
+    <div className="fixed bottom-[50px] left-1/2 -translate-x-1/2  bg-[rgba(255,255,255,0)] backdrop-blur-xl border border-borderC rounded-2xl overflow-hidden z-30">
       <div className="px-6 py-2 flex flex-col justify-center items-center gap-2 relative">
-        <div className="flex gap-[13px] items-center justify-center">
+        <div className="hidden md:flex gap-[13px] items-center justify-center">
           <div className="bg-[#2bdb00] w-3 h-3 rounded-full animate-pulse"></div>
 
           <div className="relative whitespace-pre w-auto">
@@ -41,13 +41,13 @@ const Navbar = () => {
             </p>
           </div>
         </div>
-        <div className="w-full border-t border-borderC mx-2"></div>
+        <div className="hidden md:block md:w-full border-t border-borderC mx-2"></div>
         <div className="flex justify-center items-center">
-          <div className="flex gap-[21px] justify-center items-center relative">
-            <Link href="/" className="rounded-[10px] py-3 h-min font-koulen">
+          <div className="flex gap-1 lg:gap-[21px] justify-center items-center relative">
+            <div className="rounded-[10px] py-3 h-min font-koulen hidden md:block">
               Axbhxs
-            </Link>
-            <div className="border-l border-borderC h-6"></div>
+            </div>
+            <div className="hidden lg:block border-l border-borderC h-6"></div>
 
             {link.map((item) => {
               const isActive = pathname === item.href;
@@ -56,7 +56,7 @@ const Navbar = () => {
                   key={item.href}
                   href={item.href}
                   className={`
-                    rounded-[10px] py-3 px-[18px] h-min font-koulen transition
+                    rounded-[10px] py-3 px-[18px] font-koulen transition whitespace-nowrap
                     ${
                       isActive
                         ? "bg-borderC text-secondary"

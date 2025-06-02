@@ -22,7 +22,7 @@ export default function Paragraph({ paragraph }: ParagraphProps) {
   return (
     <p
       ref={container}
-      className="flex text-[85px] max-w-[1280px] flex-wrap font-koulen whitespace-pre leading-[0.9em]"
+      className="flex text-[32px] lg:text-[85px] max-w-[1280px] flex-wrap font-koulen whitespace-pre leading-[1em] lg:leading-[0.9em]"
     >
       {words.map((word: string, i: number) => {
         const start = i / words.length;

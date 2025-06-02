@@ -10,7 +10,7 @@ const paragraph =
 
 const Intro = () => {
   return (
-    <div className="flex items-end flex-col gap-[130px] justify-end pt-[260px] pr-[60px] pb-[130px] pl-0 w-full">
+    <div className="flex items-end flex-col gap-[130px] justify-end pt-[233px] px-4 lg:pt-[260px] lg:pr-[60px] pb-[130px] lg:pl-0 w-full">
       <div className="flex flex-col justify-end items-center overflow-hidden">
         <div className="flex flex-col flex-wrap gap-3 items-start  justify-start relative">
           <div className="max-w-[1053px] relative p-0">

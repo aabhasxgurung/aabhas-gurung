@@ -9,3 +9,16 @@
 .selected-work-text {
   font-size: clamp(40px, 16vw, 328px);
 }
+.footertext {
+  font-size: clamp(40px, 16vw, 328px);
+}
+
+.navbar {
+  transform: translateY(100%);
+}
+
+@media screen and (max-width: 600px) {
+  .footertext {
+    font-size: clamp(40px, 13vw, 328px);
+  }
+}

@@ -1,6 +1,6 @@
 // components/RotatingTextCircle.tsx
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -10,20 +10,33 @@ interface Props {
 }
 
 export const RotatingTextCircle: React.FC<Props> = ({
-  size = 80,
+  // size = 80,
   speed = 15,
   initialDeg = -260.431,
 }) => {
+  const [size, setSize] = useState(80);
+  useEffect(() => {
+    const updateSize = () => {
+      const width = window.innerWidth;
+      if (width < 640) setSize(60); // mobile
+      else if (width < 1024) setSize(80); // tablet
+      else setSize(120); // desktop
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   return (
     <motion.div
       className="relative flex justify-center items-center overflow-visible box-border"
       style={{
-        width: size,
-        height: size,
-        padding: size / 2, // replicate your 100px padding
+        width: `${size}px`,
+        height: `${size}px`,
+        padding: `${size / 2}px`,
         perspective: 1200,
         willChange: "transform",
-        opacity: 1,
         transformOrigin: "center center",
       }}
       initial={{ rotate: initialDeg }}
@@ -32,7 +45,7 @@ export const RotatingTextCircle: React.FC<Props> = ({
     >
       <div
         className="aspect-square"
-        style={{ width: size * 0.39 }} // ~78px if size=200
+        style={{ width: `${size * 0.39}px` }} // ~78px if size=200
       >
         <svg
           viewBox="0 0 100 100"
