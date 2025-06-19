@@ -28,21 +28,20 @@ export const Projects = [
     ],
     overview: [
       {
-        title:
-          "Establishing the first digital footprint for a growing beverage brand.",
-        desc: "Drinkit is a well-known local beverage company with a strong community presence but no official digital platform. The aim of the project was to create a high-impact, minimal, and brand-aligned website that gives the company a strong online identity, increases discoverability, and reflects their bold and refreshing image.",
+        title: "A modern rental platform for apartments and homes",
+        desc: "Rent Estate is a fully responsive web application designed to simplify apartment hunting. Built as a personal project, it aims to provide users with a seamless experience to browse listings, view property details, and contact owners or agents — all within a clean and intuitive UI.",
       },
     ],
     challenges: [
       {
         img: "/proj/proj2.png",
-        title: "Bringing a real-world brand online from scratch",
-        desc: "Since Drinkit had no existing digital infrastructure, the challenge was to craft a full online experience from the ground up. There was no prior content, brand guidelines, or digital assets — so the entire structure, narrative, and UI had to be defined from zero while preserving the essence of the brand known by its customers.",
+        title: "Designing a rental experience from the ground up",
+        desc: "Creating a realistic and scalable rental platform meant simulating real-world features like search filters, listing pages, and detail modals. Balancing design, performance, and data handling in a project with no backend support initially required thoughtful UI state management and layout architecture.",
       },
     ],
     solution: [
       {
-        desc: "Starting with moodboards and wireframes, I created a digital presence that balances clean minimalism with vibrant, brand-driven aesthetics. The site was built with Next.js, TypeScript, Tailwind CSS, and GSAP for motion effects — giving the site a sleek and modern feel while maintaining optimal performance and responsiveness across all devices.",
+        desc: "I designed and developed the entire frontend using Next.js, TypeScript, Tailwind CSS, Framer Motion/GSAP for animations, and Redux Toolkit for state management. The project focuses on delivering fast performance, mobile-first responsiveness, and smooth animations to create an engaging user journey.",
       },
     ],
   },

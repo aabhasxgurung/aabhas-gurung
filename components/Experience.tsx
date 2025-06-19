@@ -4,17 +4,17 @@ import { RotatingTextCircle } from "./ui/RotatingCirlce";
 const exp = [
   {
     title: "Freelancer",
-    desc: "Helping Brands Grow",
+    desc: "Built custom websites for startups and local clients.",
     time: "2024-Now",
   },
   {
     title: "Frontend Developer",
-    desc: "Helping Brands Grow",
+    desc: "Built admin dashboards, chat apps, and responsive websites.",
     time: "2023-2024",
   },
   {
     title: "Internship",
-    desc: "Helping Brands Grow",
+    desc: "Assisted in building and testing user interfaces.",
     time: "2023-2023",
   },
 ];
