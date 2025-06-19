@@ -109,7 +109,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           fixed inset-0 z-[60] 
           flex items-center justify-center
           pointer-events-none
-          text-6xl lg:text-7xl font-bold
+          text-4xl sm:text-6xl lg:text-7xl font-bold
         font-koulen text-secondary
         "
       />

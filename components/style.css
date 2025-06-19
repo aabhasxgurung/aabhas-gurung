@@ -1,5 +1,5 @@
 .text-headline-fluid {
-  font-size: clamp(40px, 18vw, 350px);
+  font-size: clamp(40px, 22vw, 950px);
 }
 
 .text-headline-fluid-sub {
@@ -17,8 +17,27 @@
   transform: translateY(100%);
 }
 
+.custom-grid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 0.8571rem + 1.0143vi, 3.5rem);
+}
+
+@media (min-width: 768px) {
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
 @media screen and (max-width: 600px) {
   .footertext {
     font-size: clamp(40px, 13vw, 328px);
+  }
+  .text-headline-fluid {
+    font-size: clamp(40px, 21vw, 950px);
+  }
+  .text-headline-fluid-sub {
+    font-size: clamp(40px, 16vw, 328px);
   }
 }

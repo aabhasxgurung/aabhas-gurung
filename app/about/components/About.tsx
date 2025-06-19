@@ -74,9 +74,10 @@ const About = () => {
         </div>
         <div className="pt-[7px]">
           <h3 className="font-koulen text-secondary leading-[0.9em]">
-            <span className="text-accent font-pinyonscript">born</span> and{" "}
-            <span className="text-accent font-pinyonscript">based</span> in
-            nepal
+            <span className="text-accent font-pinyonscript italic">born</span>{" "}
+            and{" "}
+            <span className="text-accent font-pinyonscript italic">based</span>{" "}
+            in nepal
           </h3>
         </div>
         <div></div>
@@ -140,13 +141,13 @@ const About = () => {
               </h3>
             </div>
             <div>
-              <h3 className="text-about-intro text-accent font-pinyonscript leading-[0.9em]">
+              <h3 className="text-about-intro text-accent font-pinyonscript italic leading-[0.9em]">
                 user-insights, modern technology{" "}
                 <span className="font-koulen text-secondary">and</span>
               </h3>
             </div>
             <div>
-              <h3 className="text-about-intro text-accent font-pinyonscript leading-[0.9em]">
+              <h3 className="text-about-intro text-accent font-pinyonscript italic leading-[0.9em]">
                 <span className="font-koulen text-secondary">
                   and best practices
                 </span>
@@ -160,7 +161,7 @@ const About = () => {
           <div className="pt-[30px] px-6 flex flex-col gap-[10px]">
             <div>
               <h3 className="text-[10vw] text-background font-koulen leading-[80%]">
-                Expertiese <span className="font-pinyonscript">and</span>
+                Expertiese <span className="font-pinyonscript italic">and</span>
               </h3>
             </div>
             <div>
@@ -232,7 +233,9 @@ const About = () => {
               <div className="">
                 <h3 className="text-[65px] lg:text-[9vw] leading-[0.9em] text-left font-koulen">
                   Some of{" "}
-                  <span className="font-pinyonscript text-accent">my</span>
+                  <span className="font-pinyonscript italic text-accent">
+                    my
+                  </span>
                 </h3>
               </div>
               <div className="">
@@ -277,7 +280,10 @@ const About = () => {
             <div>
               <div>
                 <h3 className="text-[65px] lg:text-[10.3vw] text-secondary font-koulen leading-[0.9em]">
-                  My <span className="text-accent font-pinyonscript">love</span>
+                  My{" "}
+                  <span className="text-accent font-pinyonscript italic">
+                    love
+                  </span>
                 </h3>
               </div>
               <div>

@@ -11,6 +11,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@studio-freight/react-lenis": "^0.0.47",
+    "class-variance-authority": "^0.7.1",
     "framer-motion": "^12.11.0",
     "gsap": "^3.13.0",
     "lenis": "^1.3.1",
@@ -21,6 +22,7 @@
     "react-dom": "^18",
     "react-icons": "^5.5.0",
     "sass": "^1.88.0",
+    "tailwind-merge": "^3.3.0",
     "tailwindcss-filters": "^3.0.0"
   },
   "devDependencies": {

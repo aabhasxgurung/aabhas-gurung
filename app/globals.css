@@ -15,6 +15,7 @@
   --token-c78d5e69-afab-4771-81a7-679d6b5cbe0f: rgb(36, 43, 38);
   --border-color: rgba(255, 255, 255, 0.2);
   --list-color: rgba(36, 43, 38, 0.36);
+  --highligh-color: rgb(191, 132, 4);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -23,6 +23,7 @@ const config: Config = {
         link: "var(--token-c8f43398-7fa9-473b-9530-f3acd8077657)",
         borderC: "var(--border-color)",
         listC: "var(--list-color)",
+        highlight: "var(--highligh-color)",
         // any others you need…
       },
       fontFamily: {

@@ -13,7 +13,7 @@ const SelecedWork = () => {
               selected work
             </p>
             <div className="absolute left-1/2 -translate-x-1/2 top-[118%]">
-              <p className="text-center font-pinyonscript leading-[10%] text-[32px] md:text-[69px] lg:text-[120px] text-accent ">
+              <p className="text-center font-pinyonscript italic leading-[10%] text-[32px] md:text-[69px] lg:text-[120px] text-accent ">
                 featured
               </p>
             </div>
@@ -22,12 +22,12 @@ const SelecedWork = () => {
             {Projects.slice(0, 2).map((item) => (
               <div key={item.id} className="">
                 <Link
-                  href={"#"}
+                  href={`/works/${item.slug}`}
                   className="group flex flex-col items-start gap-[10px] justify-center p-0 cursor-pointer"
                 >
                   {/* Category Tag */}
                   <p className="text-start font-robotomono text-secondary text-sm">
-                    [UI/UX , Development]
+                    {item.name}
                   </p>
 
                   {/* Image Container */}
@@ -35,19 +35,19 @@ const SelecedWork = () => {
                     {/* Static base image */}
                     <Image
                       src={item.image}
-                      alt={item.title}
+                      alt={item.name}
                       fill
                       className="object-cover w-full h-full"
                     />
 
                     {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-30 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-50 " />
+                    <div className="hidden md:block absolute inset-0 bg-black bg-opacity-30 transition-transform duration-500 ease-out opacity-0 group-hover:opacity-50 " />
 
                     {/* Slide-in hover image */}
-                    <div className="absolute left-1/2 w-[655px] h-[295px] top-0 -translate-x-1/2 -translate-y-full transition-all duration-500 group-hover:top-1/2 group-hover:-translate-y-1/2 ease-out">
+                    <div className="hidden md:block absolute left-1/2 w-[655px] h-[295px] top-0 -translate-x-1/2 -translate-y-full transition-all duration-500 group-hover:top-1/2 group-hover:-translate-y-1/2 ease-out">
                       <Image
                         src={item.image}
-                        alt={item.title}
+                        alt={item.name}
                         width={873}
                         height={421}
                         className="object-cover rounded-lg w-[655px] h-[295px]"
@@ -57,7 +57,7 @@ const SelecedWork = () => {
 
                   {/* Footer */}
                   <div className="flex w-full justify-between text-sm font-robotomono text-secondary">
-                    <span>{item.title}</span>
+                    <span>{item.work}</span>
                     <span>Website</span>
                   </div>
                 </Link>
@@ -76,7 +76,7 @@ const SelecedWork = () => {
         </div>
         <div>
           <Link
-            href="/work"
+            href="/works"
             className="relative inline-block overflow-hidden group"
           >
             {/* Text */}

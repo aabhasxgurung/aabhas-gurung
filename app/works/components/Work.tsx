@@ -8,17 +8,21 @@ const Work = () => {
     <div className="md:pt-[40px] w-full px-6 pb-[70px]">
       <div className="md:pt-12 pb-8">
         <p className="text-secondary font-koulen work-text leading-[80%]">
-          Collection <span className="font-pinyonscript text-accent ">of</span>{" "}
-          Work
+          Collection{" "}
+          <span className="font-pinyonscript text-accent italic">of</span> Work
         </p>
       </div>
-      <div className="pt-10 flex flex-wrap justify-center items-center gap-5">
+      <div className="pt-10 flex flex-wrap justify-center items-center gap-8">
         {Projects.map((item) => (
           <div key={item.name}>
             <Link
               href={`/works/${item.slug}`}
-              className="w-[calc(100vw_-_32px)] lg:w-[calc(48vw_-_32px)] max-w-[873px] h-[421px] lg:h-[521px] overflow-hidden relative cursor-pointer group rounded-md"
+              className="flex flex-col gap-[10px] w-[calc(100vw_-_32px)] lg:w-[calc(48vw_-_32px)] max-w-[873px] h-[421px] lg:h-[521px] overflow-hidden relative cursor-pointer group rounded-md"
             >
+              <p className="text-start font-robotomono text-secondary text-sm">
+                {item.name}
+              </p>
+
               <div className="w-[calc(100vw_-_32px)] lg:w-[calc(48vw_-_32px)] max-w-[873px] h-[421px] lg:h-[521px] relative overflow-hidden rounded-md">
                 <Image
                   src={item.bg}
@@ -37,6 +41,10 @@ const Work = () => {
                     className="w-[675px] h-[400px] object-cover object-top"
                   />
                 </div>
+              </div>
+              <div className="flex w-full justify-between text-sm font-robotomono text-secondary">
+                <span>{item.work}</span>
+                <span>Website</span>
               </div>
             </Link>
           </div>

@@ -19,11 +19,11 @@ const links = [
 
 const FooterContent = () => {
   return (
-    <div className="items-center flex flex-col h-[50vh] lg:h-[100vh] justify-start pt-10 px-4 md:px-[26px] pb-4 relative w-full">
+    <div className="items-center flex flex-col h-[50vh] md:h-[70vh] lg:h-[100vh] justify-start pt-10 px-4 md:px-[26px] pb-4 relative w-full">
       <div className="flex bg-accent rounded-2xl gap-[10px] flex-1 flex-col overflow-hidden w-full will-change-transform">
         <div className="pt-[30px] px-6 flex flex-col items-center justify-center">
           <p className="font-koulen leading-[80%] text-background text-[121px]  footertext">
-            Come <span className="font-pinyonscript">say</span> hello
+            Come <span className="font-pinyonscript italic">say</span> hello
           </p>
         </div>
         <div className="items-end flex justify-between flex-1 pt-[30px] px-6 pb-6 w-full relative">

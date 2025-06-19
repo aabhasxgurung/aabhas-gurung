@@ -44,13 +44,33 @@ const Navbar = () => {
         <div className="hidden md:block md:w-full border-t border-borderC mx-2"></div>
         <div className="flex justify-center items-center">
           <div className="flex gap-1 lg:gap-[21px] justify-center items-center relative">
-            <div className="rounded-[10px] py-3 h-min font-koulen hidden md:block">
+            <div className="rounded-[10px] py-3 h-min font-koulen hidden lg:block">
               Axbhxs
             </div>
             <div className="hidden lg:block border-l border-borderC h-6"></div>
 
             {link.map((item) => {
               const isActive = pathname === item.href;
+              const isComingSoon = item.href === "/on-the-side";
+              if (isComingSoon) {
+                return (
+                  <div
+                    key={item.href}
+                    className={`
+          relative rounded-[10px] py-3 px-[18px] font-koulen text-secondary
+          pointer-events-none whitespace-nowrap
+        `}
+                  >
+                    {item.title}
+                    {/* Overlay "Coming Soon" badge */}
+                    <img
+                      src="/comingsoon.png" // Place your image in the public folder
+                      alt="Coming Soon"
+                      className="absolute top-3 -rotate-12 left-1/2 -translate-x-1/2 w-[100px] z-50" // adjust as needed
+                    />
+                  </div>
+                );
+              }
               return (
                 <Link
                   key={item.href}

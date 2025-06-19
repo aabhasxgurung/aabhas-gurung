@@ -8,14 +8,16 @@ const Header = () => {
         <div className="w-[99%] pt-[13px] flex flex-col items-center justify-center whitespace-pre z-10">
           <div className="w-[98%] h-auto">
             <p className="text-headline-fluid font-koulen text-secondary leading-[90%] text-center">
-              hunting <span className="font-pinyonscript text-accent">for</span>{" "}
-              My
+              Web
+              <span className="font-pinyonscript text-accent italic">
+                designer
+              </span>
             </p>
           </div>
         </div>
         <div className="w-[99%] pt-[13px] flex flex-col items-center  justify-center whitespace-pre">
           <p className="text-headline-fluid-sub text-[328px] font-koulen text-secondary text-center leading-[70%]">
-            Dream Porsche
+            and Developer
           </p>
         </div>
       </div>
