@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
 
 gsap.registerPlugin(useGSAP);
 
@@ -63,9 +64,11 @@ const Navbar = () => {
                   >
                     {item.title}
                     {/* Overlay "Coming Soon" badge */}
-                    <img
+                    <Image
                       src="/comingsoon.png" // Place your image in the public folder
                       alt="Coming Soon"
+                      width={100}
+                      height={100}
                       className="absolute top-3 -rotate-12 left-1/2 -translate-x-1/2 w-[100px] z-50" // adjust as needed
                     />
                   </div>

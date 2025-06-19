@@ -5,7 +5,6 @@ import Headline from "@/components/Headline";
 import Intro from "@/components/Intro";
 import PreLoader from "@/components/preloader/Preloader";
 import SelecedWork from "@/components/SelecedWork";
-import Skills from "@/components/Skills";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -31,7 +30,7 @@ export default function Home() {
       <Header />
       <Intro />
       <Experience />
-      {/* <Skills /> */}
+
       <Headline title="Hello" />
       <SelecedWork />
     </div>
